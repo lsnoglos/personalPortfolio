@@ -12,52 +12,63 @@
 <body>
     <header class="header">
         <div class="container">
-            Noel López
+            <div class="logo">
+                <h2>Noel<span>López</span></h2>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#character">Inicio</a></li>
-                    <li><a href="#services">Que hago</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Proyectos Personales</a></li>
-                    <li><a href="#work_process">Proceso de trabajo</a></li>
-                    <li><a href="#contact">Contactar</a></li>
+                    <li><a href="#character" data-es="Inicio" data-en="Home">Inicio</a></li>
+                    <li><a href="#services" data-es="Que hago" data-en="What I do">Que hago</a></li>
+                    <li><a href="#skills" data-es="Habilidades" data-en="Skills">Habilidades</a></li>
+                    <li><a href="#projects" data-es="Proyectos Personales" data-en="Personal Projects">Proyectos Personales</a></li>
+                    <li><a href="#work_process" data-es="Proceso de Trabajo" data-en="Work Process">Proceso de trabajo</a></li>
+                    <li><a href="#contact" data-es="Contactar" data-en="Contact">Contactar</a></li>
                 </ul>
             </nav>
+            <div class="language-switcher">
+                <button data-lang="en" data-es="Inglés" data-en="English" onclick="setLanguage('en')">English</button> |
+                <button data-lang="es" data-es="Español" data-en="Spanish" onclick="setLanguage('es')">Español</button>
+            </div>
         </div>
     </header>
     <section id="character" class="section container">
         <div class="character-content">
-            <h1>Hola, Soy Noel López</h1>
+            <h1 data-es="Hola, soy Noel López" data-en="Hello, I'm Noel Lopez">Hola, Soy Noel López</h1>
         </div>
     </section>
     <section id="services">
         <div class="container">
-            <h2>Que hago</h2>
+            <h2 data-es="Que hago" data-en="What I do">Que hago</h2>
         </div>
     </section>
     <section id="skills">
         <div class="container">
-            <h2>Mis habilidades</h2>
+            <h2 data-es="Mis habilidades" data-en="My Skills">Mis habilidades</h2>
         </div>
     </section>
     <section id="projects">
         <div class="container">
-            <h2>Mis proyectos</h2>
+            <h2 data-es="Mis Proyectos" data-en="My Projects">Mis proyectos</h2>
         </div>
     </section>
     <section id="work_process" class="work-process-section">
         <div class="container">
-            <h2>Mi proceso de trabajo</h2>
+            <h2 data-es="Mi Proceso de Trabajo" data-en="My Work Process">Mi proceso de trabajo</h2>
         </div>
     </section>
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2>Contacto</h2>
+            <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
         </div>
     </section>
     <footer class="footer-section">
         <div class="container footer-content">
-            2025 Noel López
+            © 2025 Noel López
         </div>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
+</html>
