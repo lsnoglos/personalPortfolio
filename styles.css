@@ -17,10 +17,7 @@ body {
   margin: 0 auto;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
+
 
 
 
@@ -87,10 +84,6 @@ nav a:hover {
 .language-switcher .active-lang {
   color: #8e44ad;
   border-bottom: 2px solid #8e44ad;
-}
-.section {
-  background: #f0f0f0;
-  padding: 4rem 0;
 }
 .section-subtitle {
   color: #555;
@@ -257,19 +250,25 @@ nav a:hover {
 
 
 
+.contact-section {
+  background: #fff;
+}
+.contact-section p, .contact-section a{
+  color: #8e44ad;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
 .service-card:hover,.project-card:hover,.skill-item:hover,.project-card:hover,.step:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 
-.work-process-section {
-  background-color: #f0f0f0;
-}
 
-.contact-section {
-  background: #fff;
-}
 
 .footer-section {
   background: #2c3e50;
@@ -281,4 +280,24 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text {
+    margin-right: 0;
+  }
+  .services-cards,
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+  }
 }
