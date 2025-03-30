@@ -227,9 +227,37 @@ nav a:hover {
 }
 
 
+.work-process-section {
+  background-color: #f0f0f0;
+}
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.step {
+  background: #fff;
+  width: 250px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.step h3 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+}
 
 
-.service-card:hover,.project-card:hover,.skill-item:hover,.project-card:hover {
+
+
+.service-card:hover,.project-card:hover,.skill-item:hover,.project-card:hover,.step:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
