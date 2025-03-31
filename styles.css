@@ -17,6 +17,15 @@ body {
   margin: 0 auto;
 }
 
+section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
 
 
@@ -93,7 +102,10 @@ nav a:hover {
 }
 
 
-
+.character-section {
+  background: #f0f0f0;
+  padding: 4rem 0;
+}
 .character-content {
   display: flex;
   flex-wrap: wrap;
@@ -108,10 +120,21 @@ nav a:hover {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+.character-text h1 span {
+  color: #8e44ad;
+}
 .character-text p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   color: #555;
+}
+.character-image img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -137,15 +160,6 @@ nav a:hover {
 }
 .service-card p {
   color: #555;
-}
-.btn-link {
-  margin-top: 1rem;
-  color: #8e44ad;
-  text-decoration: none;
-  font-weight: 500;
-}
-.btn-link:hover {
-  text-decoration: underline;
 }
 
 
@@ -258,16 +272,10 @@ nav a:hover {
   font-weight: bold;
   text-decoration: none;
 }
-
-
-
-
-.service-card:hover,.project-card:hover,.skill-item:hover,.project-card:hover,.step:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+.contact-section .btn {
+  color: white;
+  margin-top: 1rem;
 }
-
-
 
 
 .footer-section {
@@ -281,17 +289,60 @@ nav a:hover {
   align-items: center;
   gap: 0.5rem;
 }
+.footer-content p, .footer-content a {
+  color: #fff;
+  text-decoration: underline;
+}
 
 
 
+.service-card:hover,.project-card:hover,.skill-item:hover,.project-card:hover,.step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.btn{
+  display: inline-block;
+  background: #8e44ad;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  padding: 0.8rem 1.5rem;
+}
+.btn-sm {
+  display: inline-block;
+  background: #8e44ad;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+.btn:hover, .btn-sm:hover {
+  background-color: #732d91;
+}
+.btn-link {
+  margin-top: 1rem;
+  color: #8e44ad;
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn-link:hover {
+  text-decoration: underline;
+}
 
 
 @media (max-width: 768px) {
-  .hero-content {
+  .character-content {
     flex-direction: column;
     text-align: center;
   }
-  .hero-text {
+  .character-text {
     margin-right: 0;
   }
   .services-cards,
