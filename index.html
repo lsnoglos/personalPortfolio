@@ -12,10 +12,16 @@
 <body>
     <header class="header">
         <div class="container">
+            <div class="hamburger" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
             <div class="logo">
                 <h2>Noel<span>López</span></h2>
             </div>
             <nav>
+                <button class="close-menu" id="close-menu">&larr;</button>
                 <ul>
                     <li><a href="#home" data-es="Inicio" data-en="Home">Inicio</a></li>
                     <li><a href="#services" data-es="Que hago" data-en="What I do">Que hago</a></li>
@@ -31,6 +37,7 @@
                 <button data-lang="en" data-es="Inglés" data-en="English" onclick="setLanguage('en')">English</button> |
                 <button data-lang="es" data-es="Español" data-en="Spanish" onclick="setLanguage('es')">Español</button>
             </div>
+
         </div>
     </header>
     <section id="home" class="character-section">
